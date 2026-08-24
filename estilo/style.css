@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #000000;
+    --cor3: rgba(0, 0, 0, 0.577);
+    --cor4: #808080;
+    --cor5: #252525;
+    --cor6: #010528;
+    --cor7: #004b8e;
+
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font-momo: 'Momo Trust Display', cursive;
+    --font-goth: 'Science Gothic', cursive
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor6), var(--cor7));
+    min-height: 60px;
+}
+
+header h2 {
+    color: var(--cor6);
+}
+
