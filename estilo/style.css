@@ -9,9 +9,11 @@
     --cor2: #000000;
     --cor3: rgba(0, 0, 0, 0.577);
     --cor4: #808080;
-    --cor5: #252525;
-    --cor6: #010528;
-    --cor7: #004b8e;
+    --cor5: #0D0A1A;
+    --cor6: #FF6A5E;
+    --cor7:  #0d0a1a99;
+    --cor8: #F2C562;
+    --cor9: #1A0E1E;
 
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --font-momo: 'Momo Trust Display', cursive;
@@ -24,12 +26,138 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--cor5);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: -1;
+  background:
+    radial-gradient(38% 30% at 15% 12%, rgba(255, 106, 94, 0.16), transparent 60%),
+    radial-gradient(45% 35% at 85% 8%, rgba(155, 140, 255, 0.14), transparent 65%),
+    radial-gradient(40% 40% at 50% 100%, rgba(111, 211, 199, 0.10), transparent 70%);
+  animation: aurora-drift 26s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes aurora-drift {
+0% { transform: translate3d(0, 0, 0) scale(1);
+ }
+
+100% { transform: translate3d(2%, -3%, 0) scale(1.06); 
+}
+}
+
+
 header {
-    background-image: linear-gradient(to right, var(--cor6), var(--cor7));
+    background-color: var(--cor9);
     min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: inset 0 -0.2px 0px var(--cor1);
 }
 
 header h2 {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    text-shadow: 2px 0px 2px var(--cor2);
+
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar a {
+    position: relative;
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--cor6);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
     color: var(--cor6);
+}
+
+.container #menu {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: var(--cor9);
+    width: 150px;
+    height: 150px;
+}
+
+.container:hover #menu {
+    display: block;
+}
+
+.container {
+    position: ralative;
+}
+
+.exibir {
+    width: 30vw;
+    height: 80vh;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#titulo {
+    flex-direction: column;
+}
+
+#titulo h1 {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    padding-bottom: 20px;
+}
+
+#titulo p {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    line-height: 2em;
+    text-align: justify;
+}
+
+#titulo a{
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid var(--cor4);
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+#titulo a:hover {
+    color: var(--cor2);
+    background-color: var(--cor6);
 }
 
