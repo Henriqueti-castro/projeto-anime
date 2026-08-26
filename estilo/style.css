@@ -7,7 +7,7 @@
 :root {
     --cor1: #ffffff;
     --cor2: #000000;
-    --cor3: rgba(0, 0, 0, 0.577);
+    --cor3: #dcf2f9;
     --cor4: #808080;
     --cor5: #0D0A1A;
     --cor6: #FF6A5E;
@@ -15,6 +15,8 @@
     --cor8: #F2C562;
     --cor9: #1A0E1E;
     --cor10: #9b8cff24;
+    --cor11: #0080ff76;
+    --cor12: #0095ff;
 
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --font-momo: 'Momo Trust Display', cursive;
@@ -28,7 +30,9 @@
 }
 
 body {
+    position: relative;
     background-color: var(--cor5);
+    width: 99vw;
     cursor: pointer;
 }
 
@@ -174,7 +178,7 @@ header h2 {
 }
 
 .exibir {
-    width: 30vw;
+    width: 60%;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -246,10 +250,80 @@ header h2 {
     transform: scale(1.1);
 }
 
+.conta-grad {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    animation: girar 0.5s linear infinite;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 50px var(--cor10);
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#gradiente {
+    margin: auto;
+    background-image: radial-gradient(circle, var(--cor3), var(--cor12), var(--cor11), transparent 65%);
+    width: 400px;
+    height: 400px;
+    border-radius: 700px;
+    box-shadow: inset 0px 0px 50px var(--cor10);
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--cor4);
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
 #exi-popu {
     display: flex;
     align-items: last baseline;
+    margin-top: 50px;
     gap: 30px;
+}
+
+#semana {
+    color: var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 80px;
 }
 
 #populares {
@@ -260,8 +334,51 @@ header h2 {
     margin-left: 80px;
 }
 
+#adventure {
+    color: var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+#drama {
+    color: var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
 #exi-popu p {
     color: var(--cor4);
     font-family: var(--font-goth);
-
+    margin-bottom: 50px;
 }
+
+footer {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid var(--cor10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #nexus {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+footer #copy {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
