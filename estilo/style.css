@@ -14,6 +14,7 @@
     --cor7:  #0d0a1a99;
     --cor8: #F2C562;
     --cor9: #1A0E1E;
+    --cor10: #9b8cff24;
 
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --font-momo: 'Momo Trust Display', cursive;
@@ -169,7 +170,7 @@ header h2 {
 } 
 
 .container > #menu a:hover {
-    background-color: #9b8cff24;
+    background-color: var(--cor10);
 }
 
 .exibir {
@@ -192,8 +193,6 @@ header h2 {
     }
 }
 
-
-
 #titulo {
     flex-direction: column;
 }
@@ -212,6 +211,20 @@ header h2 {
     text-align: justify;
 }
 
+#titulo #assistir {
+    color: var(--cor2);
+    background-color: var(--cor6);
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+#titulo #assistir:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--cor6);
+}
+
 #titulo a{
     color: var(--cor1);
     font-family: var(--font-padrao);
@@ -222,10 +235,33 @@ header h2 {
     border: 1px solid var(--cor4);
     border-radius: 50px;
     transition: 0.3s;
+    display: block;
+    width: 300px;
+    margin-bottom: 40px;
 }
 
 #titulo a:hover {
-    color: var(--cor2);
-    background-color: var(--cor6);
+    color: var(--cor1);
+    background-color: var(--cor10);
+    transform: scale(1.1);
 }
 
+#exi-popu {
+    display: flex;
+    align-items: last baseline;
+    gap: 30px;
+}
+
+#populares {
+    color: var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+#exi-popu p {
+    color: var(--cor4);
+    font-family: var(--font-goth);
+
+}
