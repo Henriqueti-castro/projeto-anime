@@ -17,6 +17,8 @@
     --cor10: #9b8cff24;
     --cor11: #0080ff76;
     --cor12: #0095ff;
+    --cor13: #1E1837;
+    --cor14: #262626;
 
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --font-momo: 'Momo Trust Display', cursive;
@@ -354,6 +356,60 @@ header h2 {
     color: var(--cor4);
     font-family: var(--font-goth);
     margin-bottom: 50px;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+    background:
+    radial-gradient(38% 100% at 85% 8%, rgba(255, 106, 94, 0.25), transparent 100%),
+    var(--cor13);
+}
+
+aside h2 {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    padding-bottom: 30px;
+}
+
+aside p {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    line-height: 30px;
+    width: 500px;
+}
+
+aside nav {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+    margin-left: auto;
+}
+
+aside nav  a{
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid var(--cor4);
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+aside nav a:hover {
+    background-color: var(--cor2);
 }
 
 footer {
