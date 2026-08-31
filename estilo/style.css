@@ -31,10 +31,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     position: relative;
     background-color: var(--cor5);
-    width: 99vw;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -44,10 +49,10 @@ body::before {
   inset: -10%;
   z-index: -1;
   background:
-    radial-gradient(38% 30% at 15% 12%, rgba(255, 106, 94, 0.16), transparent 60%),
-    radial-gradient(45% 35% at 85% 8%, rgba(155, 140, 255, 0.14), transparent 65%),
-    radial-gradient(40% 40% at 50% 100%, rgba(111, 211, 199, 0.10), transparent 70%);
-  animation: aurora-drift 26s ease-in-out infinite alternate;
+    radial-gradient(38% 30% at 15% 12%, rgba(255, 106, 94, 0.26), transparent 60%),
+    radial-gradient(45% 35% at 85% 8%, rgba(155, 140, 255, 0.24), transparent 65%),
+    radial-gradient(40% 40% at 50% 100%, rgba(111, 211, 199, 0.20), transparent 70%);
+  animation: aurora-drift 1s ease-in-out infinite alternate;
   pointer-events: none;
 }
 
@@ -70,6 +75,12 @@ header {
     animation: baixo 1.5s linear forwards;
 }
 
+@media (max-width: 600px) {
+    header {
+        padding-left: 15px;
+    }
+}
+
 @keyframes baixo {
     0% {
         transform: translateY(-60px);
@@ -87,6 +98,12 @@ header h2 {
     font-family: var(--font-momo);
     text-shadow: 2px 0px 2px var(--cor2);
 
+}
+
+@media (max-width: 600px) {
+    header h2 {
+        font-size: 1em;
+    }
 }
 
 .navbar {
@@ -123,6 +140,20 @@ header h2 {
     color: var(--cor6);
 }
 
+@media (max-width: 600px) {
+    .navbar a {
+        font-size: 0.9em;
+    }
+
+    .navbar a:hover {
+        color: var(--cor1);
+    }
+
+    .navbar a:hover::after {
+        width: 0%;
+    }
+}
+
 .navbar .container {
     position: relative;
 }
@@ -157,6 +188,12 @@ header h2 {
     100% {
         top: 30px;
         opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: none;
     }
 }
 
@@ -252,6 +289,73 @@ header h2 {
     transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+
+    .exibir {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    #titulo h1 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #titulo p {
+        font-size: 12px;
+    }
+
+    #titulo #assistir {
+        width: 150px;
+        height: 50px;
+        margin-top: -30px;
+        padding: 10px;
+        padding-top: 15px;
+        border-radius: 25px;
+        font-size: 12px;
+        transition: none;
+    }
+
+    #titulo a {
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        padding-top: 15px;
+        padding-left: 30px;
+        border-radius: 25px;
+        font-size: 12px;
+        transition: none;
+    }
+
+    .panel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #titulo #assistir:hover {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    #titulo a:hover {
+        transform: scale(1);
+        background-color: transparent;
+    }
+
+    @keyframes transform {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(25px);
+        opacity: 1;
+    }
+}
+}
+
 .conta-grad {
     position: absolute;
     top: 10%;
@@ -295,6 +399,16 @@ header h2 {
     }
 }
 
+@media (max-width: 600px) {
+    .conta-grad {
+        display: none;
+    }
+
+    #gradiente {
+        display: none;
+    }
+}
+
 .container-img {
     display: flex;
     justify-content: center;
@@ -313,11 +427,35 @@ header h2 {
     transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+    .container-img {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        gap: 25px;
+        padding: 50px;
+    }
+
+    .card {
+        width: 200px;
+        height: 250px;
+        flex-shrink: 0;
+    }
+}
+
 #exi-popu {
     display: flex;
     align-items: last baseline;
     margin-top: 50px;
     gap: 30px;
+}
+
+@media (max-width: 600px) {
+    #exi-popu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 #semana {
@@ -328,12 +466,26 @@ header h2 {
     margin-left: 80px;
 }
 
+@media (max-width: 600px) {
+    #semana {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
 #populares {
     color: var(--cor1);
     font-family: var(--font-goth);
     font-weight: bold;
     font-size: 25px;
     margin-left: 80px;
+}
+
+@media (max-width: 600px) {
+    #populares {
+        font-size: 20px;
+        margin-left: 20px;
+    }
 }
 
 #adventure {
@@ -344,6 +496,13 @@ header h2 {
     margin-left: 80px;
 }
 
+@media (max-width: 600px) {
+    #adventure {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
 #drama {
     color: var(--cor1);
     font-family: var(--font-goth);
@@ -352,10 +511,23 @@ header h2 {
     margin-left: 80px;
 }
 
+@media (max-width: 600px) {
+    #drama {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
 #exi-popu p {
     color: var(--cor4);
     font-family: var(--font-goth);
     margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    #exi-popu p {
+        margin-left: 20px;
+    }
 }
 
 aside {
@@ -412,6 +584,38 @@ aside nav a:hover {
     background-color: var(--cor2);
 }
 
+@media (max-width: 600px) {
+    aside{
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        margin-top: 50px;
+        border-radius: 0;
+    }
+
+    aside h2 {
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    aside p {
+        font-size: 12px;
+        max-width: 450px;
+        padding-bottom: 20px;
+    }
+
+    aside nav {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 0;
+        margin-left: 0;
+    }
+}
+
 footer {
     width: 100%;
     height: 200px;
@@ -434,6 +638,22 @@ footer #copy {
     font-family: var(--font-padrao);
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    footer #nexus {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    footer #copy {
+        font-size: 12px;
+    }
 }
 
 
