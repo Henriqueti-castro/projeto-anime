@@ -441,6 +441,10 @@ header h2 {
         height: 250px;
         flex-shrink: 0;
     }
+
+    .card:hover {
+        transform: scale(1);
+    }
 }
 
 #exi-popu {
