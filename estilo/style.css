@@ -257,6 +257,7 @@ header h2 {
 #titulo #assistir {
     color: var(--cor2);
     background-color: var(--cor6);
+    text-align: center;
     display: block;
     width: 300px;
     margin-bottom: 15px;
@@ -270,6 +271,7 @@ header h2 {
 
 #titulo a{
     color: var(--cor1);
+    text-align: center;
     font-family: var(--font-padrao);
     font-weight: bold;
     font-size: 15px;
@@ -317,11 +319,11 @@ header h2 {
     }
 
     #titulo a {
+        text-align: center;
         width: 150px;
         height: 50px;
         padding: 10px;
         padding-top: 15px;
-        padding-left: 30px;
         border-radius: 25px;
         font-size: 12px;
         transition: none;
@@ -411,20 +413,33 @@ header h2 {
 
 .container-img {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .card {
     background-color: var(--cor4);
-    width: 200px;
-    height: 300px;
-    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
     transition: transform 0.5s ease;
+    flex-shrink: 0;
 }
 
 .card:hover {
     transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 @media (max-width: 600px) {
@@ -433,7 +448,9 @@ header h2 {
         overflow-x: auto;
         scrollbar-width: none;
         gap: 25px;
-        padding: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .card {
@@ -445,12 +462,13 @@ header h2 {
     .card:hover {
         transform: scale(1);
     }
+
+
 }
 
 #exi-popu {
     display: flex;
     align-items: last baseline;
-    margin-top: 50px;
     gap: 30px;
 }
 
@@ -459,6 +477,7 @@ header h2 {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        
     }
 }
 
@@ -554,26 +573,56 @@ aside {
 aside h2 {
     color: var(--cor1);
     font-family: var(--font-momo);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    text-shadow: 2px 0px 2px var(--cor2);
+}
+
+aside h2 > span {
+    color: var(--cor6);
+}
+
+aside .supor {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-shadow: 2px 0px 2px var(--cor2);
+
+}
+
+aside .supor > span {
+    color: var(--cor6);
 }
 
 aside p {
     color: var(--cor1);
     font-family: var(--font-padrao);
+    font-size: 14px;
     font-weight: bold;
     line-height: 30px;
     width: 500px;
+    text-shadow: 2px 0px 2px var(--cor2);
+}
+
+aside p > span {
+    color: var(--cor8);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
 }
 
 aside nav {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
     padding-right: 50px;
     margin-left: auto;
 }
 
-aside nav  a{
+aside nav a{
     color: var(--cor1);
+    text-align: center;
     font-family: var(--font-padrao);
     font-weight: bold;
     font-size: 14px;
@@ -581,11 +630,12 @@ aside nav  a{
     padding: 15px;
     border: 1px solid var(--cor4);
     border-radius: 50px;
+    width: 100px;
     transition: 0.5s ease;
 }
 
 aside nav a:hover {
-    background-color: var(--cor2);
+    background-color: var(--cor6);
 }
 
 @media (max-width: 600px) {
@@ -603,13 +653,28 @@ aside nav a:hover {
 
     aside h2 {
         font-size: 20px;
-        padding-bottom: 0;
+        padding-bottom: 5px;
+    }
+
+    aside .supor {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    aside .github {
+        font-size: 20px;
+        padding-top: 15px;
     }
 
     aside p {
         font-size: 12px;
         max-width: 350px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    aside p > span {
+        font-size: 12px;
     }
 
     aside nav {
@@ -617,6 +682,16 @@ aside nav a:hover {
         align-items: flex-start;
         padding-right: 0;
         margin-left: 0;
+    }
+
+    aside nav a {
+        font-size: 12px;
+        background-color: var(--cor6);
+        transition: none;
+    }
+
+    aside nav a:hover {
+        background-color: none;
     }
 }
 
