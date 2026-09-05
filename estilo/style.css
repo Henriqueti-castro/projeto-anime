@@ -142,8 +142,9 @@ header h2 {
 }
 
 @media (max-width: 600px) {
+
     .navbar a {
-        font-size: 0.9em;
+        font-size: 12px;
     }
 
     .navbar a:hover {
