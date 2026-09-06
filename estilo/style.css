@@ -19,7 +19,7 @@
     --cor12: #0095ff;
     --cor13: #1E1837;
     --cor14: #262626;
-    --cor15: #00000090;
+    --cor15: #00000077;
 
     --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --font-momo: 'Momo Trust Display', cursive;
@@ -99,6 +99,10 @@ header h2 {
     font-family: var(--font-momo);
     text-shadow: 2px 0px 2px var(--cor2);
 
+}
+
+header h2 > span {
+    color: var(--cor6);
 }
 
 @media (max-width: 600px) {
@@ -205,12 +209,29 @@ header h2 {
     padding-bottom: 20px;
 }
 
-#titulo p {
+#titulo h1 > span {
+    color: var(--cor6);
+}
+
+#titulo #tem {
+    color: var(--cor8);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+#titulo #desc {
     color: var(--cor1);
     font-family: var(--font-padrao);
     font-weight: bold;
+    font-size: 14px;
     line-height: 2em;
     text-align: justify;
+    padding-bottom: 50px;
+    max-width: 400px;
+    width: 90%;
 }
 
 #titulo #assistir {
@@ -674,6 +695,86 @@ aside nav a:hover {
     }
 }
 
+        /* anime_s */
+
+.ti-tem {
+    color: var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--cor10);
+    animation: baixoone 1s ease forwards;
+}
+
+@keyframes baixoone {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ti-tem span {
+    color: var(--cor6);
+}
+
+main {
+    background-color: var(--cor15);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+    animation: onepiece 0.5s ease forwards;
+}
+
+@keyframes onepiece {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+main .card-tem > a {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 1px 0px 1px var(--cor2);
+}
+
+main .card-tem {
+    text-align: center;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    background: 
+        radial-gradient(40% 90% at 80% 50%, rgba(255, 106, 94, 0.6), transparent 90%), var(--cor13);
+    transition: transform 0.5s ease;
+}
+
+main .card-tem:hover {
+    transform: scale(1.1);
+}
+
+
 footer {
     width: 100%;
     height: 200px;
@@ -689,6 +790,10 @@ footer #nexus {
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 20px;
+}
+
+footer #nexus > span {
+    color: var(--cor6);
 }
 
 footer #copy {
