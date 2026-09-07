@@ -401,6 +401,10 @@ header h2 > span {
     padding-left: 50px;
 }
 
+.container-img a {
+    text-decoration: none;
+}
+
 .card {
     position: relative;
     background-color: transparent;
@@ -443,6 +447,10 @@ header h2 > span {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 30px;
+    }
+
+    .container-img a {
+        text-decoration: none;
     }
 
     .card {
