@@ -702,8 +702,8 @@ aside nav a:hover {
     font-family: var(--font-goth);
     font-weight: bold;
     text-align: center;
-    padding-bottom: 20px;
-    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid var(--cor10);
     animation: baixoone 1s ease forwards;
@@ -772,6 +772,40 @@ main .card-tem {
 
 main .card-tem:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+
+    .ti-tem {
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 0;
+    }
+
+    main .card-tem > a {
+        font-size: 10px;
+    }
+
+    main .card-tem {
+        width: 250px;
+        padding: 15px;
+        transition: none;
+    }
+
+    main .card-tem:hover {
+        transform: scale(1);
+    }
+
 }
 
 
