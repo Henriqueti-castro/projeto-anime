@@ -800,6 +800,11 @@ main .card-tem:hover {
         border-radius: 0;
     }
 
+    main.curto {
+        margin-top: 135px;
+        margin-bottom: 135px;
+    }
+
     main .card-tem > a {
         font-size: 10px;
     }
