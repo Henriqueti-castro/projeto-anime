@@ -79,6 +79,7 @@ header {
 @media (max-width: 600px) {
     header {
         padding-left: 15px;
+        padding-right: 20px;
     }
 }
 
