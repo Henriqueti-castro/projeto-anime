@@ -706,24 +706,25 @@ aside nav a:hover {
 
         /* anime_s */
 
-    p {
-        color: var(--cor1);
-        font-family: var(--font-momo);
-        font-weight: bold;
-        padding-top: 10px;
-        padding-left: 10px;
-    }
+p {
+    color: var(--cor1);
+    font-family: var(--font-momo);
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 
-    p > span {
-        color: var(--cor6);
-    }
+p > span {
+    color: var(--cor6);
+}
+
 .ti-tem {
     color: var(--cor1);
     font-family: var(--font-goth);
     font-weight: bold;
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 0px;
     margin-bottom: 50px;
     border-bottom: 1px solid var(--cor10);
     animation: baixoone 1s ease forwards;
@@ -813,7 +814,7 @@ main .card-tem:hover {
     .ti-tem {
         font-size: 20px;
         padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 0px;
         margin-bottom: 0;
     }
 
