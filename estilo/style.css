@@ -856,7 +856,7 @@ main .card-tem:hover {
     width: 100%;
     height: 450px;
     margin-bottom: 50px;
-    box-shadow: inset 50px 50px 100px var(--cor2);
+    box-shadow: inset 50px 50px 150px var(--cor2);
 }
 
 .poster .intro {
