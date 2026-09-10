@@ -951,6 +951,7 @@ main .card-tem:hover {
     font-size: 12px;
     font-weight: normal;
     line-height: 20px;
+    padding: 5px;
 }
 
 footer {
