@@ -848,6 +848,110 @@ main .card-tem:hover {
 
 }
 
+/* animes_s anime  */
+
+.poster {
+    background: var(--cor4) url('../animes_s/one-piece/one-piece_card-ep/poster/one\ piece-poster.jpeg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+    box-shadow: inset 50px 50px 100px var(--cor2);
+}
+
+.poster .intro {
+    width: 750px;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--cor15);
+}
+
+.poster .intro > h1 {
+    color: var(--cor1);
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-goth);
+    padding-bottom: 25px;
+}
+
+.poster .intro > p {
+    color: var(--cor1);
+    text-align: justify;
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.poster .intro p > .idade {
+    color: var(--cor1);
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.container-ep {
+    position: relative;
+    padding-top: 50px;
+}
+
+.container-ep::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background-color: var(--cor4);
+}
+
+.container-ep .fila {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.container-ep h2 {
+    color:  var(--cor1);
+    font-family: var(--font-goth);
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.container-ep .card-ep {
+    width: 270px;
+    height: 240px;
+    padding-top: 15px;
+    margin-top: 20px;
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.container-ep .card-ep:hover {
+    transform: scale(1.1);
+    background-color: var(--cor15);
+}
+
+.container-ep .card-ep > .episodio {
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--cor4);
+}
+
+.container-ep .card-ep > p {
+    text-align: justify;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
 
 footer {
     width: 100%;
