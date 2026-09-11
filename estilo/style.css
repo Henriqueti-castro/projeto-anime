@@ -851,7 +851,7 @@ main .card-tem:hover {
 /* animes_s anime  */
 
 .poster {
-    background: var(--cor4) url('../animes_s/one-piece/one-piece_card-ep/poster/one\ piece-poster.jpeg') no-repeat center;
+    background: var(--cor4) url('../animes_s/one-piece/one piece_card-ep/poster/one\ piece-poster.jpeg') no-repeat center;
     background-size: cover;
     width: 100%;
     height: 450px;
@@ -893,6 +893,28 @@ main .card-tem:hover {
     background-color: orangered;
     border-radius: 5px;
     padding: 2px;
+}
+
+@media (max-width: 600px) {
+    .poster {
+        background-size: 100% 100%;
+    }
+
+    .poster .intro {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        
+    }
+
+    .poster .intro > h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .poster .intro > p {
+        font-size: 12px;
+    }
 }
 
 .poster2 {
