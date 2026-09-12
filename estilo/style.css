@@ -1029,6 +1029,28 @@ main .card-tem:hover {
     padding: 2px;
 }
 
+@media (max-width: 600px) {
+    .poster3 {
+        background-size: 100% 100%;
+    }
+
+    .poster3 .intro {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        
+    }
+
+    .poster3 .intro > h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .poster3 .intro > p {
+        font-size: 16px;
+    }
+}
+
 .container-ep {
     position: relative;
     padding-top: 50px;
@@ -1091,7 +1113,7 @@ main .card-tem:hover {
 @media (max-width: 600px) {
 
     .container-ep h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .container-ep .fila {
