@@ -1076,7 +1076,7 @@ main .card-tem:hover {
     color:  var(--cor1);
     font-family: var(--font-goth);
     font-weight: bold;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .container-ep .card-ep {
