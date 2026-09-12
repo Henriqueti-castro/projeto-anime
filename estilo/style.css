@@ -962,6 +962,28 @@ main .card-tem:hover {
     padding: 2px;
 }
 
+@media (max-width: 600px) {
+    .poster2 {
+        background-size: 100% 100%;
+    }
+
+    .poster2 .intro {
+        width: 100%;
+        height: 100%;
+        padding-top: 35px;
+        
+    }
+
+    .poster2 .intro > h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .poster2 .intro > p {
+        font-size: 10px;
+    }
+}
+
 .container-ep {
     position: relative;
     padding-top: 50px;
