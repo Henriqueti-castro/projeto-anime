@@ -348,7 +348,7 @@ header h2 > span {
     height: 500px;
     display: flex;
     align-items: center;
-    animation: girar 0.5s linear infinite;
+    animation: girar 2s linear infinite;
     border-radius: 50%;
     box-shadow: inset 0px 0px 50px var(--cor10);
 }
@@ -1051,6 +1051,73 @@ main .card-tem:hover {
     }
 }
 
+.poster4 {
+    background: var(--cor4) url('../animes_s/dragonball/dragon ball super_card-ep/poster/dragon ball super-poster.jpeg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+    box-shadow: inset 50px 50px 150px var(--cor2);
+}
+
+.poster4 .intro {
+    width: 750px;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--cor15);
+}
+
+.poster4 .intro > h1 {
+    color: var(--cor1);
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-goth);
+    padding-bottom: 25px;
+}
+
+.poster4 .intro > p {
+    color: var(--cor1);
+    text-align: justify;
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.poster4 .intro p > .idade4 {
+    color: var(--cor1);
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+@media (max-width: 600px) {
+    .poster4 {
+        background-size: 100% 100%;
+    }
+
+    .poster4 .intro {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        
+    }
+
+    .poster4 .intro > h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .poster4 .intro > p {
+        font-size: 12px;
+    }
+}
+
 .container-ep {
     position: relative;
     padding-top: 50px;
@@ -1157,7 +1224,6 @@ main .card-tem:hover {
         width: 200px;
         height: 120px;
     }
-
 
 }
 
