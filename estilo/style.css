@@ -1076,7 +1076,7 @@ main .card-tem:hover {
     color:  var(--cor1);
     font-family: var(--font-goth);
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .container-ep .card-ep {
@@ -1112,8 +1112,13 @@ main .card-tem:hover {
 
 @media (max-width: 600px) {
 
+    .container-ep {
+        background-color: var(--cor15);
+    }
+
     .container-ep h2 {
         font-size: 16px;
+        padding-left: 20px;
     }
 
     .container-ep .fila {
@@ -1131,11 +1136,14 @@ main .card-tem:hover {
         padding-top: 0;
         padding-right: 20px;
         border-radius: 0;
+        border: none;
         transition: none;
     }
 
     .container-ep .card-ep:hover {
         transform: scale(1);
+        background-color: transparent;
+
     }
 
     .container-ep .card-ep > p {
