@@ -1587,6 +1587,73 @@ main .card-tem:hover {
     }
 }
 
+.poster12 {
+    background: var(--cor4) url('../animes_s/radiant/radiant_card-ep/poster/radiant-poster.jpeg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+    box-shadow: inset 50px 50px 150px var(--cor2);
+}
+
+.poster12 .intro {
+    width: 750px;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--cor15);
+}
+
+.poster12 .intro > h1 {
+    color: var(--cor1);
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-goth);
+    padding-bottom: 25px;
+}
+
+.poster12 .intro > p {
+    color: var(--cor1);
+    text-align: justify;
+    text-shadow: 1px 0px 2px var(--cor2);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.poster12 .intro p > .idade12 {
+    color: var(--cor1);
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+@media (max-width: 600px) {
+    .poster12 {
+        background-size: 100% 100%;
+    }
+
+    .poster12 .intro {
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        
+    }
+
+    .poster12 .intro > h1 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .poster12 .intro > p {
+        font-size: 12px;
+    }
+}
+
 .container-ep {
     position: relative;
     padding-top: 50px;
