@@ -564,19 +564,31 @@ header h2 > span {
 
 .table table {
     background-color: var(--cor4);
-    width: 500px;
+    margin: auto;
+    width: 1000px;
     height: 300px;
     border-collapse: collapse;
 }
 
 .table caption {
+    color:  var(--cor1);
+    font-family: var(--font-goth);
     padding: 10px;
     border: 1px solid var(--cor1);
 }
 
 .table td {
-    
+    color:  var(--cor1);
+    font-family: var(--font-padrao);
     border: 1px solid var(--cor1);
+    text-align: center;
+}
+
+.table .num {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    width: 100px;
+    text-align: center;
 }
 
 aside {
