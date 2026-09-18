@@ -562,6 +562,23 @@ header h2 > span {
     }
 }
 
+.table table {
+    background-color: var(--cor4);
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.table caption {
+    padding: 10px;
+    border: 1px solid var(--cor1);
+}
+
+.table td {
+    
+    border: 1px solid var(--cor1);
+}
+
 aside {
     display: flex;
     align-items: center;
