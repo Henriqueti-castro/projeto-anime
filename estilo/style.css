@@ -563,8 +563,8 @@ header h2 > span {
 }
 
 .table table {
-    background-color: var(--cor4);
     margin: auto;
+    margin-top: 50px;
     width: 1000px;
     height: 300px;
     border-collapse: collapse;
@@ -572,25 +572,38 @@ header h2 > span {
 
 .table caption {
     color:  var(--cor1);
+    background-color: var(--cor15);
+    border: 1px solid var(--cor1);
     font-family: var(--font-goth);
     padding: 10px;
-    border: 1px solid var(--cor1);
+}
+
+thead {
+    background-color: var(--cor14);
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--cor10);
 }
 
 .table td {
     color:  var(--cor1);
     font-family: var(--font-padrao);
     border: 1px solid var(--cor1);
+    padding: 10px;
     text-align: center;
 }
 
 .table .num {
     color: var(--cor1);
     font-family: var(--font-padrao);
-    width: 100px;
+    width: 50px;
     text-align: center;
 }
 
+.table .anime {
+    width: 475px;
+}
 aside {
     display: flex;
     align-items: center;
