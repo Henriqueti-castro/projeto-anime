@@ -32,14 +32,10 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     position: relative;
     cursor: pointer;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -69,6 +65,8 @@ header {
     z-index: 100;
     background-color: var(--cor9);
     padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-shadow: inset 0 -0.2px 0px var(--cor1);
     animation: baixo 1.5s linear forwards;
 }
