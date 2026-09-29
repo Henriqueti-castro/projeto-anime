@@ -13,7 +13,7 @@
     --cor6: #FF6A5E;
     --cor7:  #0d0a1a99;
     --cor8: #F2C562;
-    --cor9: #1A0E1E;
+    --cor9: #1a0e1eb0;
     --cor10: #9b8cff24;
     --cor11: #0080ff76;
     --cor12: #0095ff;
@@ -64,6 +64,7 @@ header {
     top: 0;
     z-index: 100;
     background-color: var(--cor9);
+    backdrop-filter: blur(5px);
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
