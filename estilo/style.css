@@ -209,6 +209,7 @@ header div {
     color: var(--cor1);
     font-family: var(--font-momo);
     padding-bottom: 20px;
+    margin-left: 10px;
 }
 
 #titulo h1 > span {
