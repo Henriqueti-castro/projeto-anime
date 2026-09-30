@@ -373,9 +373,8 @@ header div {
 .card {
     position: relative;
     background-color: var(--cor15);
-    width: 200px;
-    height: 350px;
-    border-radius: 15px;
+    width: 180px;
+    height: 300px;
     padding-top: 10px;
     transition: transform 0.5s ease;
 } 
@@ -389,8 +388,8 @@ header div {
 .card img {
     display: block;
     margin: auto;
-    width: 180px;
-    height: 280px;
+    width: 150px;
+    height: 220px;
 }
 
 .card p {
