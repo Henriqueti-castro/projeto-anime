@@ -439,14 +439,14 @@ header div {
 
 }
 
-#exi-popu {
+.exi-popu {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
 @media (max-width: 600px) {
-    #exi-popu {
+    .exi-popu {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
@@ -514,13 +514,13 @@ header div {
     }
 }
 
-#exi-popu p {
+.exi-popu p {
     color: var(--cor4);
     font-family: var(--font-goth);
 }
 
 @media (max-width: 600px) {
-    #exi-popu p {
+    .exi-popu p {
         margin-left: 20px;
     }
 }
