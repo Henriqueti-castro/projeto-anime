@@ -583,6 +583,7 @@ aside p > span {
     font-family: var(--font-padrao);
     font-weight: bold;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 aside nav {
@@ -2395,7 +2396,6 @@ main .card-tem:hover {
         width: 200px;
         height: 120px;
     }
-
 }
 
 footer {
